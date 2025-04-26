@@ -3,7 +3,7 @@
 This is a **reaction/timing game** for Arduino using WS2812B ("NeoPixel") LED strips.  
 Inspired by code from Mirko Pavleski, this version adds levels, effects, and a separate LED "score" display.
 
-## Features
+## ✨ Features
 
 - **WS2812B (NeoPixel) LED Strip**: Main display with 60 individually-addressable LEDs.
 - **Score LEDs**: Separate 8-LED strip to show progress/level.
@@ -15,7 +15,7 @@ Inspired by code from Mirko Pavleski, this version adds levels, effects, and a s
 - **Easy Restart**: Game resets after each win or loss.
 - **Sound Support**: (Commented out, can be enabled if buzzer is added.)
 
-## Hardware Requirements
+## 🛠️ Hardware Required
 
 - **Arduino UNO, Nano, Mega** or compatible board
 - **WS2812B LED Strip (60 LEDs)** — main game display
@@ -25,7 +25,8 @@ Inspired by code from Mirko Pavleski, this version adds levels, effects, and a s
 - **Power supply** for LED strips (recommended)
 - **Jumper wires, breadboard, or PCB**
 
-## Pinout
+
+## 📌 Pin Mapping
 
 | Function           | Arduino Pin |
 |--------------------|:-----------|
@@ -36,13 +37,13 @@ Inspired by code from Mirko Pavleski, this version adds levels, effects, and a s
 
 *Change `DATA_PIN`, `SCORE_PIN`, and `BUTTON_PIN` in the code if you use different pins.*
 
-## Libraries Needed
+## 📦 Libraries Used
 
 - [FastLED](https://github.com/FastLED/FastLED)
 
 Install via the Arduino Library Manager.
 
-## How to Play
+## 🎮 How to Play
 
 1. **Power up the game:** The LED strip shows a rainbow idle animation.
 2. **Start a round:** Press the button. The LED strip clears, and a moving white light starts from the beginning.
@@ -53,27 +54,18 @@ Install via the Arduino Library Manager.
 5. **Levels:** The speed increases with each round up to 8 levels. If you win all levels, the game resets.
 6. **Try again!** See how far you can go and how fast your reflexes are!
 
-## Game States
-
-- **Idle/Ready:** Rainbow animation, waiting for button press.
-- **Active Level:** Moving white light, press button at the right time!
-- **Win:** Green animation, progress LED advances, speed increases.
-- **Lose:** Red animation, game resets.
-
-## Customization
+## ⚡ Customization
 
 - Change `NUM_LEDS` and `SCORE_LEDS` for different strips.
 - Adjust the `ledSpeed` array for game speed per level.
 - Uncomment `tone(...)` lines and connect a buzzer for sound effects.
 
-## Credits
+## 🙏 Credits & Acknowledgements
 
 - Based on code by Mirko Pavleski
 
-## License
+## 📸 Pictures
 
-This project is open source. See the `LICENSE` file for details.
+* https://github.com/skuydi/cyclonGame/blob/main/IMG_20250222_160244.jpg
 
 ---
-
-Have fun and train your reflexes!
